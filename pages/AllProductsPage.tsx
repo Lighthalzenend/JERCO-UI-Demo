@@ -192,21 +192,21 @@ const AllProductsPage: React.FC = () => {
               <SidebarFilters />
             </aside>
 
-            {/* Mobile Filter Button and Drawer */}
-            <div className="lg:hidden mb-4">
-              <Button variant="outline" onClick={() => setIsFiltersOpen(!isFiltersOpen)} leftIcon={<Filter size={16}/>}>
-                Filters
-              </Button>
-              {isFiltersOpen && (
-                <div className="fixed inset-0 bg-black/40 z-40" onClick={() => setIsFiltersOpen(false)}></div>
-              )}
-              <div className={`fixed top-0 left-0 h-full w-72 bg-white z-50 transform transition-transform ${isFiltersOpen ? 'translate-x-0' : '-translate-x-full'} overflow-y-auto`}>
-                  <SidebarFilters />
-              </div>
-            </div>
-
             {/* Main Content */}
-            <main className="flex-1">
+            <main className="flex-1 min-w-0">
+                {/* Mobile Filter Button and Drawer */}
+                <div className="lg:hidden mb-4">
+                  <Button variant="outline" onClick={() => setIsFiltersOpen(!isFiltersOpen)} leftIcon={<Filter size={16}/>}>
+                    Filters
+                  </Button>
+                  {isFiltersOpen && (
+                    <div className="fixed inset-0 bg-black/40 z-40" onClick={() => setIsFiltersOpen(false)}></div>
+                  )}
+                  <div className={`fixed top-0 left-0 h-full w-72 bg-white z-50 transform transition-transform ${isFiltersOpen ? 'translate-x-0' : '-translate-x-full'} overflow-y-auto`}>
+                      <SidebarFilters />
+                  </div>
+                </div>
+
                 {searchQuery && (
                   <div className="mb-6 bg-gray-100 p-4 rounded-lg flex justify-between items-center text-sm">
                       <p className="text-gray-800">
