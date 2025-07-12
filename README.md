@@ -1,4 +1,4 @@
-# JER.CO - Football Jersey Store (Frontend Demo)
+# JER.CO - Jersey Store (Frontend Demo)
 
 This repository contains the frontend UI demo for JER.CO, an online football jersey store. The project is developed using **React**, **TypeScript (TSX)**, and styled with **Tailwind CSS**. It leverages **Vite** for a fast and efficient development experience.
 
