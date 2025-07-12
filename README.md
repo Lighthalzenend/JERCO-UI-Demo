@@ -1,70 +1,65 @@
-
 # JER.CO - Football Jersey Store (Frontend Demo)
 
-Selamat datang di repositori frontend untuk JER.CO, sebuah UI demo untuk toko online yang khusus menjual jersey sepak bola. Proyek ini dibangun menggunakan React dan Tailwind CSS dengan fokus pada pengalaman pengguna yang bersih dan modern.
+This repository contains the frontend UI demo for JER.CO, an online football jersey store. The project is developed using **React**, **TypeScript (TSX)**, and styled with **Tailwind CSS**. It leverages **Vite** for a fast and efficient development experience.
 
-## 🚀 Fitur Utama
+## Key Features
 
-- **Otentikasi Pengguna & Admin:** Sistem login terpisah untuk pelanggan dan administrator.
-- **Navigasi & Pencarian Produk:** Pengguna dapat mencari produk berdasarkan nama atau merek dengan saran pencarian *real-time*.
-- **Katalog Produk:** Halaman untuk melihat semua produk dengan filter berdasarkan merek, harga, dan sortir.
-- **Detail Produk:** Halaman detail untuk setiap jersey, lengkap dengan deskripsi, gambar, dan produk terkait.
-- **Keranjang Belanja:** Fungsionalitas penuh untuk menambah, mengubah kuantitas, dan menghapus item dari keranjang.
-- **Proses Checkout:** Alur checkout yang sederhana, dari pengisian alamat hingga konfirmasi pesanan.
-- **Profil Pengguna:** Halaman di mana pengguna dapat melihat riwayat pesanan mereka.
-- **Panel Admin:** Dashboard khusus untuk admin guna mengelola produk (CRUD), melihat pesanan, dan laporan penjualan.
-- **Desain Responsif:** Tampilan yang optimal di berbagai perangkat, dari desktop hingga mobile.
+* **User & Admin Authentication:** Separate login systems for customers and administrators.
+* **Product Navigation & Search:** Search functionality with real-time suggestions.
+* **Product Catalog:** Comprehensive product listing with filtering and sorting options.
+* **Product Details:** Detailed pages for individual jerseys, including images and descriptions.
+* **Shopping Cart:** Full cart management (add, update quantity, remove items).
+* **Checkout Process:** Streamlined order placement and confirmation flow.
+* **User Profile:** Page for users to view their order history.
+* **Admin Panel:** Dashboard for product (CRUD), order, and sales report management.
+* **Responsive Design:** Optimized viewing across various devices.
 
-## 🛠️ Teknologi yang Digunakan
+## Technologies Used
 
-- **React:** Library JavaScript untuk membangun antarmuka pengguna.
-- **React Router:** Untuk routing sisi klien dan navigasi halaman.
-- **TypeScript:** Menambahkan tipe statis ke JavaScript untuk meningkatkan skalabilitas dan maintainabilitas.
-- **Tailwind CSS:** Framework CSS utility-first untuk desain yang cepat dan responsif.
-- **Lucide Icons:** Pustaka ikon yang indah dan konsisten.
-- **Tanpa Build Step:** Proyek ini menggunakan `importmap` dan modul ES6 langsung di browser, sehingga tidak memerlukan proses build (seperti Vite atau Webpack) untuk pengembangan.
+* **React:** JavaScript library for building user interfaces.
+* **React Router:** For client-side routing and navigation.
+* **TypeScript:** Adds static typing for enhanced code quality and scalability.
+* **Tailwind CSS:** A utility-first CSS framework for rapid and responsive styling.
+* **Lucide Icons:** A consistent and beautiful icon library.
+* **Vite:** A fast build tool and development server for modern web projects.
 
-## 🏃‍♂️ Cara Menjalankan Proyek Secara Lokal
+## Getting Started
 
-Karena proyek ini tidak memiliki dependensi Node.js (`node_modules`), Anda tidak perlu menjalankan `npm install`. Anda hanya memerlukan server web lokal sederhana untuk menyajikan file-file statis.
+To run this project locally, you will need **Node.js** and **npm** (Node Package Manager) installed on your machine.
 
-### Prasyarat
+### Prerequisites
 
-- Web browser modern (Chrome, Firefox, Edge).
-- (Opsional, tapi direkomendasikan) Node.js terinstal untuk menggunakan `npx`.
-
-### Menjalankan dengan `npx serve` (Cara Mudah)
-
-1.  **Clone repositori ini:**
+* **Node.js & npm:** Download and install the latest LTS version from [nodejs.org](https://nodejs.org/).
+    Verify installation by running:
     ```bash
-    git clone https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git
-    cd NAMA_REPO_ANDA
+    node -v
+    npm -v
     ```
 
-2.  **Jalankan server lokal:**
-    Buka terminal di dalam folder proyek dan jalankan perintah berikut. Perintah ini akan mengunduh dan menjalankan paket `serve` sementara tanpa menginstalnya secara global.
+### Local Development Setup
+
+1.  **Clone the Repository:**
     ```bash
-    npx serve
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
+    *(Replace `YOUR_USERNAME/YOUR_REPO_NAME` with your actual GitHub repository path.)*
+
+2.  **Install Dependencies:**
+    Navigate into the cloned project directory and install all required packages:
+    ```bash
+    npm install
     ```
 
-3.  **Buka di Browser:**
-    Terminal akan menampilkan URL lokal tempat aplikasi berjalan, biasanya `http://localhost:3000`. Buka alamat tersebut di browser Anda.
-
-### Alternatif: Menjalankan dengan Python
-
-Jika Anda memiliki Python terinstal, Anda bisa menggunakan server HTTP bawaannya.
-
-1.  Buka terminal di dalam folder proyek.
-2.  Jalankan perintah berikut (untuk Python 3):
+3.  **Start the Development Server:**
+    Once dependencies are installed, start the application:
     ```bash
-    python -m http.server
+    npm run dev
     ```
-3.  Buka browser dan akses `http://localhost:8000`.
+    The application will launch in development mode, typically opening automatically in your web browser at `http://localhost:5173`.
 
-## 部署 (Deployment)
+## Available Scripts
 
-Proyek ini dapat dengan mudah di-deploy ke platform hosting situs statis seperti:
-
-- **Vercel:** Sangat direkomendasikan. Cukup hubungkan repositori GitHub Anda, dan Vercel akan otomatis men-deploy-nya tanpa perlu konfigurasi.
-- **Netlify:** Alternatif yang bagus untuk Vercel dengan proses yang serupa.
-- **GitHub Pages:** Pilihan lain yang terintegrasi langsung dengan repositori Anda.
+* `npm run dev`: Starts the development server with Vite.
+* `npm run build`: Compiles the application for production into the `dist/` directory.
+* `npm run preview`: Serves the production build locally for preview.
